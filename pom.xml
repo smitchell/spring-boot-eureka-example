@@ -9,9 +9,9 @@
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
   <groupId>com.example</groupId>
-  <artifactId>eureka-example</artifactId>
+  <artifactId>discovery-service</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>eureka-example</name>
+  <name>discovery-service</name>
   <description>Demo project for Spring Boot Eureka</description>
 
   <properties>
@@ -52,6 +52,14 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>pl.project13.maven</groupId>
+        <artifactId>git-commit-id-plugin</artifactId>
       </plugin>
     </plugins>
   </build>

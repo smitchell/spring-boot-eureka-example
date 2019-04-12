@@ -1,0 +1,9 @@
+---
+applications:
+  - buildpack: https://github.com/cloudfoundry/java-buildpack.git
+    name: discovery-service
+    memory: 768m
+    path: ../target/discovery-service-0-SNAPSHOT.jar
+    routes:
+      - route: discovery-service.local.pcfdev.io
+    timeout: 180
